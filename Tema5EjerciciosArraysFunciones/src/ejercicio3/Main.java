@@ -1,5 +1,6 @@
 package ejercicio3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -22,8 +23,10 @@ public class Main {
 		
 		dogma.close();
 		
-		System.out.println(FuncionRellenaPares.rellenaPares(longitudUsuario, numeroUsuario));
+		System.out.println(Arrays.toString(FuncionRellenaPares.rellenaPares(longitudUsuario, numeroUsuario)));
 
+		
+		
 	}
 
 }
