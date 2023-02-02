@@ -14,8 +14,10 @@ public class FuncionSinRepetidos {
 		// bucle para recorrer array t
 		for (int posicion = 0; posicion < t.length; posicion++) {
 
-			// cuando llega al 4 en posicion [6] no devuelve respuesta positiva
-			// que es lo que deberia de hacer si lo ha encontrado en la tabla
+			// ordeno la tabla
+			Arrays.sort(tabla);
+
+			// guardo en respuesta la posicion en la que el valor ha sido encontrado
 			respuesta = Arrays.binarySearch(tabla, t[posicion]);
 
 			// si respuesta devuelve negativo el valor de t[posicion] no esta en array tabla
