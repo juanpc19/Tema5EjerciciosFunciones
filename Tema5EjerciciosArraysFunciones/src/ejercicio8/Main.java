@@ -13,7 +13,7 @@ public class Main {
 
 		Scanner dogma = new Scanner(System.in);
 
-		//bucle de comprobacion de ontroduccion de datos
+		//bucle de comprobacion de introduccion de datos
 		do {
 			System.out.println("Cuantos elementos quiere sumar? ");
 
