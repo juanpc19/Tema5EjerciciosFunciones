@@ -17,11 +17,12 @@ public class Main {
 
 				tabla[fila][columna] = dogma.nextInt();
 			}
+			System.out.println(Arrays.toString(tabla[fila]));
 		}
 
 		dogma.close();
 
-		System.out.println(Arrays.toString(FuncionGira90.gira90(tabla)));
+		System.out.println(Arrays.deepToString(FuncionGira90.gira90(tabla)));
 
 	}
 

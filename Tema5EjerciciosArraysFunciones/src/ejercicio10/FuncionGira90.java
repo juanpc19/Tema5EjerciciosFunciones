@@ -1,20 +1,22 @@
 package ejercicio10;
 
+import java.util.Arrays;
+
 public class FuncionGira90 {
 
 	static int[][] gira90(int tablaInicio[][]) {
 
-		int tablaCopia[][] = tablaInicio;
+		int tablaCopia[][] = new int [tablaInicio.length][tablaInicio.length];
 
 		for (int fila = 0; fila < tablaInicio.length; fila++) {
-
-			for (int columna = 0; columna < tablaInicio.length; columna++) {
-
-				for (int columnaCopia = tablaCopia.length - 1; columnaCopia > 0; columnaCopia--) {
-
-					tablaCopia[columnaCopia][fila] = tablaInicio[fila][columna];
-
-				}
+			
+			tablaCopia=Arrays.copyOf(tablaCopia,tablaCopia.length+1);
+			tablaCopia=Arrays.copyOf(tablaCopia,tablaCopia[0].length+1);
+			
+			for (int columna = 0; columna >tablaInicio.length ; columna++) {
+				//tablaInicio[fila][columna]
+				//tablaCopia[fila][columna] = tablaInicio[columna][fila];
+				
 			}
 		}
 
