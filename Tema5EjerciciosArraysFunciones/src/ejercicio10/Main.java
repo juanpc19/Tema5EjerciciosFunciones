@@ -15,13 +15,20 @@ public class Main {
 
 			for (int columna = 0; columna < tabla.length; columna++) {
 
+				System.out.println("Introduzca un valor para la siguiente posicion del array: ");
 				tabla[fila][columna] = dogma.nextInt();
 			}
-			System.out.println(Arrays.toString(tabla[fila]));
 		}
 
 		dogma.close();
 
+		for (int fila = 0; fila < tabla.length; fila++) {
+			System.out.println(Arrays.toString(tabla[fila]));
+		}
+
+		System.out.println();
+
+		//print en linea del array tabla dado a funcion gira90 
 		System.out.println(Arrays.deepToString(FuncionGira90.gira90(tabla)));
 
 	}

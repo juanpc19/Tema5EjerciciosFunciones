@@ -6,18 +6,18 @@ public class FuncionGira90 {
 
 	static int[][] gira90(int tablaInicio[][]) {
 
-		int tablaCopia[][] = new int [tablaInicio.length][tablaInicio.length];
+		// creo array tablaCopia donde copiare el contenido del array tabla recibido del
+		// main dandole la longitud del mismo
+		int tablaCopia[][] = new int[tablaInicio.length][tablaInicio.length];
 
+		// bucle estandar para recorrer array bidimensional eje y
 		for (int fila = 0; fila < tablaInicio.length; fila++) {
-			
-			tablaCopia=Arrays.copyOf(tablaCopia,tablaCopia[0].length+1);
-			
-			for (int columna = 0; columna >tablaInicio.length ; columna++) {
-				
-				tablaCopia=Arrays.copyOf(tablaCopia,tablaCopia.length+1);
-				//tablaInicio[fila][columna]
-				//tablaCopia[fila][columna] = tablaInicio[columna][fila];
-				
+			// bucle estandar para recorrer array bidimensional eje x
+			for (int columna = 0; columna < tablaInicio.length; columna++) {
+
+				// doy a tabla copia en posicion indicada el valor de tabla inicio indicado
+				tablaCopia[columna][tablaCopia.length - 1 - fila] = tablaInicio[fila][columna];
+
 			}
 		}
 

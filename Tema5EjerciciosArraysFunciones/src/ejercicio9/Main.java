@@ -22,6 +22,7 @@ public class Main {
 
 		dogma.close();
 
+		//ternario evalua funcion y devuelve print acorde a ternario
 		System.out.println(FuncionEsMagica.esMagica(tabla) ? "Es magica. " : "No es magica. ");
 	}
 
