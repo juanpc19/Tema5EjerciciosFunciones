@@ -1,9 +1,8 @@
 package ejercicio7;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
-import ejercicio6.FuncionEliminarMayores;
+import java.util.Scanner;
 
 public class Main {
 

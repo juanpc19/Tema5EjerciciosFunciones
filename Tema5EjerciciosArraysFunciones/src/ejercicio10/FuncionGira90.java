@@ -1,7 +1,5 @@
 package ejercicio10;
 
-import java.util.Arrays;
-
 public class FuncionGira90 {
 
 	static int[][] gira90(int tablaInicio[][]) {
